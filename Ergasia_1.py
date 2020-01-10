@@ -1,5 +1,4 @@
-words = "Hello I like lookies cookies1"
-with open('text.txt', 'r') as file:
+with open('text.txt', 'r') as file: ## https://stackoverflow.com/questions/8369219/how-to-read-a-text-file-into-a-string-variable-and-strip-newlines
     words = file.read().replace('\n', '')
 words = words.split() # converts $words variable from string to list of words ## https://stackoverflow.com/questions/6181763/converting-a-string-to-a-list-of-words
 sorted_list = sorted(words, key=len) # put's the words from the sortest to the longet
