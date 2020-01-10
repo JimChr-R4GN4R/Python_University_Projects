@@ -1,2 +1,13 @@
 text.txt --> File that contains the text we want
 python3 script.py
+
+Παρατήρηση:
+Όταν το τρέχω στο repl.it μου το τρέχει κανονικά χωρίς πρόβλημα. Στο cmd των Wi... μου βγάζει αυτό το error:
+Traceback (most recent call last):
+  File "script.py", line 2, in <module>
+    words = file.read().replace('\n', ' ') ## replace in text.txt the change line with space
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.7_3.7.1776.0_x64__qbz5n2kfra8p0\lib\encodings\cp1253.py", line 23, in decode
+    return codecs.charmap_decode(input,self.errors,decoding_table)[0]
+UnicodeDecodeError: 'charmap' codec can't decode byte 0x9c in position 7: character maps to <undefined>
+
+Κάτι με τους ελληνικούς χαρακτήρες φαντάζομαι φταίει για το Unicode,αλλά το cp1253.py δεν καταλαβαίνω και πολύ τί θέλει,και στην γραμμή 2 δεν βλέπω κάποιο λάθος
