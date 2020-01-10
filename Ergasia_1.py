@@ -17,44 +17,34 @@ try:
 
        print("3rd longest word in the list is: %s" % (reversed_list[2],))
 
-
        try:
 
          print("4th longest word in the list is: %s" % (reversed_list[3],))
 
-
          try:
            print("5th longest word in the list is: %s" % (reversed_list[4],))
+        
+        
+        
+        
          except IndexError:
            print("There are no more words")
-
-
-
-
-
-
-
 
        except IndexError:
          print("There are no more words")
 
-
-
-
-
-
-
-
      except IndexError:
        print("There are no more words")
-
 
    except IndexError:
      print("There are no more words")
 
-
 except IndexError:
   print("Text file is empty! Please put some words :)")
 
+
+
+#################################################### Useful sources about this script ####################################################
 ## https://stackoverflow.com/questions/26132770/python-finding-longest-shortest-words-in-a-list-and-calling-them-in-a-function/44919337
 ## https://discuss.codecademy.com/t/how-can-i-check-if-an-index-is-valid/377316/4
+## https://stackoverflow.com/questions/17015230/are-nested-try-except-blocks-in-python-a-good-programming-practice
