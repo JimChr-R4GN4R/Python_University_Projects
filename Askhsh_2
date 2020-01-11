@@ -1,10 +1,13 @@
-string = 'test'
-if string == '' :
-  print("Please insert input!")
-else:
+string = input("Give a word:")
+while string == "":                    ## If input is empty, then ask again.any ## https://stackoverflow.com/questions/20337489/python-how-to-keep-repeating-a-program-until-a-specific-input-is-obtained
+    string = input("Give a word:")     # 
 
-  num = ''.join(str(ord(c)) for c in string) # converts every letter to ascii number
-  int_num = int(num) # converts $num from string to intiger
+
+
+def   prime_calculator( string ):
+
+  num = ''.join(str(ord(c)) for c in string)
+  int_num = int(num)
     
   # If given number is greater than 1 
   if int_num > 1: 
@@ -22,6 +25,11 @@ else:
     
   else: 
     print(int_num, "is not a prime number") 
+    return
+
+
+
+prime_calculator(string)
     
     
 ############################ Useful sources for the script ############################
