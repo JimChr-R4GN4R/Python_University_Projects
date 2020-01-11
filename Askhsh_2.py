@@ -38,7 +38,7 @@ def freq(str):
   
 def main(): 
     with open('text.txt', 'r') as myfile:
-      str=myfile.read().replace('\n', ' ',)
+      str=myfile.read().replace('\n', ' ',).replace(',', '').replace('.', '')
     freq(str)                     
   
 if __name__=="__main__": 
@@ -49,4 +49,5 @@ if __name__=="__main__":
 ########################### Useful sources for the script ###########################
 # https://www.geeksforgeeks.org/find-frequency-of-each-word-in-a-string-in-python/
 # https://stackoverflow.com/questions/2932511/letter-count-on-a-string
+# https://stackoverflow.com/questions/8687018/how-to-replace-two-things-at-once-in-a-string
 # Ashsh_1's script
