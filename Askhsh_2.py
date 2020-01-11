@@ -48,4 +48,5 @@ if __name__=="__main__":
 
 ########################### Useful sources for the script ###########################
 # https://www.geeksforgeeks.org/find-frequency-of-each-word-in-a-string-in-python/
+# https://stackoverflow.com/questions/2932511/letter-count-on-a-string
 # Ashsh_1's script
