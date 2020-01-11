@@ -20,15 +20,19 @@ def freq(str):
   
         # count the frequency of each word(present  
         # in str2) in str and print 
-        word_letters_number = 0
+        word_letters_number = 0 # word's total letters
         for j in str2[i]:
           f[i]=f.get(i,0)+1
-          word_letters_number = word_letters_number + 1
+          word_letters_number = word_letters_number + 1 
           f_number = int(str2[i].count('f')) # number of f 
           c_number = int(str2[i].count('c')) # number of c
           k_number = int(str2[i].count('k')) # number of k
           r_number = int(str2[i].count('r')) # number of r
-          total_bad_letters = f_number + c_number + k_number + r_number
+          F_number = int(str2[i].count('F')) # number of f 
+          C_number = int(str2[i].count('C')) # number of c
+          K_number = int(str2[i].count('K')) # number of k
+          R_number = int(str2[i].count('R')) # number of r
+          total_bad_letters = f_number + c_number + k_number + r_number + F_number + C_number + K_number + R_number # total of bad letters in the word
           total_good_letters = int(word_letters_number - total_bad_letters)
 
         if total_good_letters > total_bad_letters:
@@ -38,7 +42,7 @@ def freq(str):
   
 def main(): 
     with open('text.txt', 'r') as myfile:
-      str=myfile.read().replace('\n', ' ',).replace(',', '').replace('.', '')
+      str=myfile.read().replace('\n', ' ',).replace(',', '').replace('.', '') # replace \n and delete , and dot
     freq(str)                     
   
 if __name__=="__main__": 
@@ -50,4 +54,4 @@ if __name__=="__main__":
 # https://www.geeksforgeeks.org/find-frequency-of-each-word-in-a-string-in-python/
 # https://stackoverflow.com/questions/2932511/letter-count-on-a-string
 # https://stackoverflow.com/questions/8687018/how-to-replace-two-things-at-once-in-a-string
-# Askhsh_1's script
+# Ashsh_1's script
