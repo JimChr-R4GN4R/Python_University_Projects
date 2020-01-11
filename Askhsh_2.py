@@ -50,4 +50,4 @@ if __name__=="__main__":
 # https://www.geeksforgeeks.org/find-frequency-of-each-word-in-a-string-in-python/
 # https://stackoverflow.com/questions/2932511/letter-count-on-a-string
 # https://stackoverflow.com/questions/8687018/how-to-replace-two-things-at-once-in-a-string
-# Ashsh_1's script
+# Askhsh_1's script
