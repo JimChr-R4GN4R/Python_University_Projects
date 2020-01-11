@@ -38,8 +38,14 @@ def freq(str):
   
 def main(): 
     with open('text.txt', 'r') as myfile:
-      str=myfile.read().replace('\n', ' ')
+      str=myfile.read().replace('\n', ' ',)
     freq(str)                     
   
 if __name__=="__main__": 
     main()             # call main function 
+
+
+
+########################### Useful sources for the script ###########################
+# https://www.geeksforgeeks.org/find-frequency-of-each-word-in-a-string-in-python/
+# Ashsh_1's script
