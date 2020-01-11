@@ -51,7 +51,7 @@ with open('text.txt') as my_file:
           
         def main(): 
             with open('text.txt', 'r') as myfile:
-              str=myfile.read().replace('\n', ' ',).replace(',', '').replace('.', '').replace('!', '') # replace \n and delete , ! and dot
+              str=myfile.read().replace('\n', ' ',).replace(',', '').replace('.', '').replace('!', '').replace('-', '').replace('-', '') # replace \n and delete , ! - _ and dot
             freq(str)                     
           
         if __name__=="__main__": 
