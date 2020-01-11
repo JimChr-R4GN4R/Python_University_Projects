@@ -11,3 +11,4 @@ Traceback (most recent call last):
 UnicodeDecodeError: 'charmap' codec can't decode byte 0x9c in position 7: character maps to <undefined>
 
 Κάτι με τους ελληνικούς χαρακτήρες φαντάζομαι φταίει για το Unicode,αλλά το cp1253.py δεν καταλαβαίνω και πολύ τί θέλει,και στην γραμμή 2 δεν βλέπω κάποιο λάθος
+Στο linux λειτουργεί κανονικά.
