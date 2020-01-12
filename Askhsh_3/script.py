@@ -14,18 +14,15 @@ def compute_bill(food):
         total += item
     return total
 
-###################
+##################### Shoping list input ############################
 
 shopping_list = [] 
-maxLengthList = 6
-while len(shopping_list) < maxLengthList:
+while len(shopping_list) < 100: # maximum items you can add are 100
     item = input("Enter your Item to the List: ")
+    if item == '': # If finished and press enter, then stop the loop
+      break
     shopping_list.append(item)
-    print(shopping_list)
-print("That's your Shopping List")
-print(shopping_list)
-
-##################
+#####################################################################
 
 
 
@@ -38,6 +35,6 @@ print(sum_cost)
 
 
 
-###########################
+############################# Useful sources for the script #############################
 #https://stackoverflow.com/questions/29189978/computing-shopping-list-total-using-dictionaries
 #https://stackoverflow.com/questions/21043387/how-do-you-add-input-from-user-into-list-in-python#21043528
