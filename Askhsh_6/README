@@ -1,0 +1,6 @@
+pip install instagram-scraper
+
+For more info: https://github.com/rarcega/instagram-scraper
+
+example : python app.py --comments dim.chrysoheris
+
