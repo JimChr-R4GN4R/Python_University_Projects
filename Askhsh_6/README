@@ -1,7 +1,6 @@
-For more info: https://github.com/rarcega/instagram-scraper
-
-
+This is a simple Instagram Scraper!
 
 # How to execute:
 python3 script.py
 
+This project has been made with the help of https://github.com/rarcega/instagram-scraper code
