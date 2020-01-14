@@ -33,7 +33,7 @@ from constants import *
 
 
 def start_script(target):
-    os.system("python scraper.py --comments -m 10 " + target)
+    os.system("python scraper.py --comments -m 100 " + target)
 
 
 try:
