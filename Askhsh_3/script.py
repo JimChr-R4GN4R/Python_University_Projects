@@ -39,6 +39,7 @@ while len(shopping_list) < 100: # maximum items you can add are 100
 
 
 
+foros = cost * 24 / 100
 
 sum_cost = foros + cost
 
