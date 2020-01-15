@@ -1,6 +1,8 @@
 This is a simple Instagram Scraper!
-This project has been made with the help of https://github.com/rarcega/instagram-scraper code
 
+This scraper shows the profile which submited the most comments on a target.
+
+This project has been made with the help of https://github.com/rarcega/instagram-scraper code
 
 
 # How to execute:
