@@ -7,7 +7,8 @@ while target == "":
     print("Please put a name!\n")
     target = input("Choose your target: ")
 
-start_script(target)
+posts_limit = "100" # posts scan limit
+start_script(target,posts_limit)
 
 retriever(target)
 

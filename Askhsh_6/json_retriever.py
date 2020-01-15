@@ -2,8 +2,11 @@ import json
 
 
 def retriever(target):
-  
-  json_str = open('{0}/{0}.json'.format(target)).read()
+  try:
+    json_str = open('{0}/{0}.json'.format(target)).read()
+  except FileNotFoundError:
+    print("The target has private profile or not found!")
+    exit()
 
   contact = json.loads(json_str)
 
@@ -43,9 +46,11 @@ def retriever(target):
   sorted_list = sorted(b.items(), key=lambda kv: kv[1])
   sorted_list.reverse()
 
-
-  most_comments_author = sorted_list[0]
-
+  try:
+    most_comments_author = sorted_list[0]
+  except IndexError:
+    print("There are no commenters :(")
+    exit()
 
   print("Most Commenter(s) with", most_comments_author[1],"comments: ")
   for i in sorted_list:
@@ -79,4 +84,5 @@ def retriever(target):
 # https://stackoverflow.com/questions/59742922/python-cd-in-a-folder-without-library?noredirect=1#comment105634285_59742922
 # https://stackoverflow.com/questions/19522990/python-catch-exception-and-continue-try-block
 # https://stackoverflow.com/questions/59742922/python-cd-in-a-folder-without-library
+
 
