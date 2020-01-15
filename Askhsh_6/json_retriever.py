@@ -3,7 +3,7 @@ import json
 
 def retriever(target):
   
-  json_str = open('/{0}/{0}.json'.format(target)).read()
+  json_str = open('{0}/{0}.json'.format(target)).read()
 
   contact = json.loads(json_str)
 
@@ -23,13 +23,14 @@ def retriever(target):
       for comments_total in contact["GraphImages"][x]["comments"]["data"]:
         comment = contact["GraphImages"][x]["comments"]["data"][y]["text"]
         comment_author = contact["GraphImages"][x]["comments"]["data"][y]["owner"]["username"]
-        print(comment_author," : ",comment)
+        #print(comment_author," : ",comment)
         commnets_authors_total.append(comment_author)
         y = y + 1
 
     except IndexError:
 
-      print("Not commnet in", x, 'Post')
+      #print("Not commnet in", x, 'Post')
+      pass
 
 
     x = x + 1
@@ -76,4 +77,6 @@ def retriever(target):
 # https://stackoverflow.com/questions/2161752/how-to-count-the-frequency-of-the-elements-in-a-list
 # https://www.tutorialspoint.com/python/list_reverse.htm
 # https://stackoverflow.com/questions/59742922/python-cd-in-a-folder-without-library?noredirect=1#comment105634285_59742922
+# https://stackoverflow.com/questions/19522990/python-catch-exception-and-continue-try-block
+# https://stackoverflow.com/questions/59742922/python-cd-in-a-folder-without-library
 
