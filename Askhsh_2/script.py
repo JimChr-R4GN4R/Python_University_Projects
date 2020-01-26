@@ -64,4 +64,4 @@ with open('text.txt') as my_file:
 # https://stackoverflow.com/questions/2932511/letter-count-on-a-string
 # https://stackoverflow.com/questions/8687018/how-to-replace-two-things-at-once-in-a-string
 # https://stackoverflow.com/questions/2507808/how-to-check-whether-a-file-is-empty-or-not
-# Ashsh_1's script
+# Askhsh_1's script
