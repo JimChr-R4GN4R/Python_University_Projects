@@ -37,10 +37,10 @@ with open('text.txt') as my_file:
                   c_number = int(str2[i].count('c')) # number of c
                   k_number = int(str2[i].count('k')) # number of k
                   r_number = int(str2[i].count('r')) # number of r
-                  F_number = int(str2[i].count('F')) # number of f 
-                  C_number = int(str2[i].count('C')) # number of c
-                  K_number = int(str2[i].count('K')) # number of k
-                  R_number = int(str2[i].count('R')) # number of r
+                  F_number = int(str2[i].count('F')) # number of F 
+                  C_number = int(str2[i].count('C')) # number of C
+                  K_number = int(str2[i].count('K')) # number of K
+                  R_number = int(str2[i].count('R')) # number of R
                   total_bad_letters = f_number + c_number + k_number + r_number + F_number + C_number + K_number + R_number
                   total_good_letters = int(word_letters_number - total_bad_letters)
 
