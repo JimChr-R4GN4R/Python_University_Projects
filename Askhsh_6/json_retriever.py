@@ -26,7 +26,6 @@ def retriever(target):
       for comments_total in contact["GraphImages"][x]["comments"]["data"]:
         comment = contact["GraphImages"][x]["comments"]["data"][y]["text"]
         comment_author = contact["GraphImages"][x]["comments"]["data"][y]["owner"]["username"]
-        #print(comment_author," : ",comment)
         commnets_authors_total.append(comment_author)
         y = y + 1
 
