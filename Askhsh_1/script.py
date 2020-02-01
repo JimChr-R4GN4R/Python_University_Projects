@@ -1,6 +1,6 @@
 try:
   with open('text.txt', 'r') as file: ## https://stackoverflow.com/questions/8369219/how-to-read-a-text-file-into-a-string-variable-and-strip-newlines
-      words = file.read().replace('\n', ' ').replace(',', ' ').replace('  ', '') # convert it's format for reading the words in a list via space 
+      words = file.read().replace('\n', ' ').replace(',', ' ').replace('  ', '') # replace in text.txt the change line with space and some others to make it readable for the script
   words = words.split() # converts $words variable from string to list of words ## https://stackoverflow.com/questions/6181763/converting-a-string-to-a-list-of-words
   sorted_list = sorted(words, key=len) # put's the words from the sortest to the longet
   reversed_list = sorted_list[::-1] # the list is reversed, so it goes from longest to sortest ## https://www.programiz.com/python-programming/methods/list/reverse
@@ -12,7 +12,7 @@ try:
 
 
 
-  vowels = ('a', 'e', 'i', 'o', 'u', 'A', 'I', 'E', 'O', 'U', 'α', 'ε', 'η', 'ι', 'ο', 'υ', 'ω', 'Α', 'Ε', 'Η', 'Ι', 'Ο', 'Υ', 'Ω')
+  vowels = ('a', 'e', 'i', 'o', 'u', 'A', 'I', 'E', 'O', 'U', 'α', 'ε', 'η', 'ι', 'ο', 'υ', 'ω', 'Α', 'Ε', 'Η', 'Ι', 'Ο', 'Υ', 'Ω','ά','έ','ή','ί','ό','ύ','ώ','Ά','Έ','Ή','Ί','Ό','Ύ','Ώ')
 
 
 
