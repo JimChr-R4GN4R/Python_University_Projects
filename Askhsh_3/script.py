@@ -1,10 +1,10 @@
 ###### Available items with their costs ######
-prices = {
+prices = {                                  ##
     "banana": 100,
     "apple": 2,
     "orange": 1.5,
     "pear": 3
-}
+}                                           ##
 ##############################################
 cost = 0
 foros = 0
@@ -16,11 +16,11 @@ def compute_bill(food):
         total += item
     return total
 
-##################### Shoping list input ############################
-
-shopping_list = [] 
+##################### Shoping list input #################################################################
+                                                                                                        ##
+shopping_list = []                                                                                      ##
 while len(shopping_list) < 100: # maximum items you can add are 100
-    item = input("Enter your Item to the List: ")
+    item = input("Enter your Item to the List (one per time): ")
 
     if item == '': # If finished and press enter, then stop the loop
       break
@@ -31,12 +31,9 @@ while len(shopping_list) < 100: # maximum items you can add are 100
     except KeyError:
       print("Item does not exist in the list")
       shopping_list = shopping_list[:-1] # if input is not exist,then delete it from $shopping_list
-
-
-#####################################################################
-
-
-
+                                                                                                        ##
+                                                                                                        ##
+##########################################################################################################
 
 
 foros = cost * 24 / 100
@@ -46,8 +43,7 @@ sum_cost = foros + cost
 print(sum_cost, "€")
 
 
-
-###########################
+########################### Useful sources for the script ###########################
 #https://stackoverflow.com/questions/29189978/computing-shopping-list-total-using-dictionaries
 #https://stackoverflow.com/questions/21043387/how-do-you-add-input-from-user-into-list-in-python#21043528
 #https://stackoverflow.com/questions/18169965/how-to-delete-last-item-in-list#18170372
