@@ -22,7 +22,7 @@ shopping_list = []                                                              
 while len(shopping_list) < 100: # maximum items you can add are 100
     item = input("Enter your Item to the List (one per time): ")
 
-    if item == '': # If finished and press enter, then stop the loop
+    if item == '': # If finished then press enter, then stop the loop
       break
 
     try: # Checks if input exists in the list
