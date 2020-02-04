@@ -16,10 +16,22 @@ def compute_bill(food):
         total += item
     return total
 
+
+
+###################################### Cost calculate function
+                                  ##
+def ComputeCost(cost):
+  foros = cost * 24 / 100
+
+  sum_cost = foros + cost
+  return sum_cost
+                                  ##
+####################################
+
 ##################### Shoping list input #################################################################
                                                                                                         ##
 shopping_list = []                                                                                      ##
-while len(shopping_list) < 100: # maximum items you can add are 100
+while len(shopping_list) != "": # Add until give no input
     item = input("Enter your Item to the List (one per time): ")
 
     if item == '': # If finished then press enter, then stop the loop
@@ -28,6 +40,7 @@ while len(shopping_list) < 100: # maximum items you can add are 100
     try: # Checks if input exists in the list
       shopping_list.append(item)
       cost = sum([ prices[s] for s in shopping_list ])
+      ComputeCost(cost)
     except KeyError:
       print("Item does not exist in the list")
       shopping_list = shopping_list[:-1] # if input is not exist,then delete it from $shopping_list
@@ -36,11 +49,8 @@ while len(shopping_list) < 100: # maximum items you can add are 100
 ##########################################################################################################
 
 
-foros = cost * 24 / 100
 
-sum_cost = foros + cost
-
-print(sum_cost, "€")
+print(ComputeCost(cost), "€")
 
 
 ########################### Useful sources for the script ###########################
