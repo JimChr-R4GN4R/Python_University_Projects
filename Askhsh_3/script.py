@@ -1,7 +1,7 @@
 ###### Available items with their costs ######
 prices = {                                  ##
-    "banana": 100,
-    "apple": 2,
+    "banana": 1.28,
+    "apple": 2.3,
     "orange": 1.5,
     "pear": 3
 }                                           ##
@@ -52,10 +52,12 @@ while len(shopping_list) != "": # Add until give no input
 
 
 
-print(ComputeCost(cost), "€")
+print(round(ComputeCost(cost), 2), "€")
+
 
 
 ########################### Useful sources for the script ###########################
 #https://stackoverflow.com/questions/29189978/computing-shopping-list-total-using-dictionaries
 #https://stackoverflow.com/questions/21043387/how-do-you-add-input-from-user-into-list-in-python#21043528
 #https://stackoverflow.com/questions/18169965/how-to-delete-last-item-in-list#18170372
+#https://stackoverflow.com/questions/3914725/how-to-turn-a-float-number-like-293-4662543-into-293-47-in-python
