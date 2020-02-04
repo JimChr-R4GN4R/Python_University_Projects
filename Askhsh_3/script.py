@@ -35,15 +35,17 @@ while len(shopping_list) != "": # Add until give no input
     item = input("Enter your Item to the List (one per time): ")
 
     if item == '': # If finished then press enter, then stop the loop
-      break
-
-    try: # Checks if input exists in the list
-      shopping_list.append(item)
-      cost = sum([ prices[s] for s in shopping_list ])
-      ComputeCost(cost)
-    except KeyError:
-      print("Item does not exist in the list")
-      shopping_list = shopping_list[:-1] # if input is not exist,then delete it from $shopping_list
+        break
+    elif item == 'help': # Show menu
+        print(prices)
+    else:
+        try: # Checks if input exists in the list
+          shopping_list.append(item)
+          cost = sum([ prices[s] for s in shopping_list ])
+          ComputeCost(cost)
+        except KeyError:
+          print("Item does not exist in the list")
+          shopping_list = shopping_list[:-1] # if input is not exist,then delete it from $shopping_list
                                                                                                         ##
                                                                                                         ##
 ##########################################################################################################
