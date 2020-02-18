@@ -4,7 +4,15 @@ This scraper shows the profile which submited the most comments on a target.
 
 This project has been made with the help of https://github.com/rarcega/instagram-scraper code
 
-
+instagram-scraper files:
+ 	constants.py
+  scraper.py
+  
+my scripts:
+ 	json_retriever.py
+  script.py
+  
+  
 # How to execute:
 python3 script.py
 
